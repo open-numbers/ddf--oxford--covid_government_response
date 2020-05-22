@@ -1,0 +1,37 @@
+concept,concept_type,name
+c1_flag,measure,C1 flag
+c1_school_closing,measure,C1 school closing
+c2_flag,measure,C2 flag
+c2_workplace_closing,measure,C2 workplace closing
+c3_cancel_public_events,measure,C3 cancel public events
+c3_flag,measure,C3 flag
+c4_flag,measure,C4 flag
+c4_restrictions_on_gatherings,measure,C4 restrictions on gatherings
+c5_close_public_transport,measure,C5 close public transport
+c5_flag,measure,C5 flag
+c6_flag,measure,C6 flag
+c6_stay_at_home_requirements,measure,C6 stay at home requirements
+c7_flag,measure,C7 flag
+c7_restrictions_on_internal_movement,measure,C7 restrictions on internal movement
+c8_international_travel_controls,measure,C8 international travel controls
+confirmed_cases,measure,Confirmed cases
+confirmed_deaths,measure,Confirmed deaths
+country,entity_domain,Country
+day,time,Day
+e1_flag,measure,E1 flag
+e1_income_support,measure,E1 income support
+e2_debt_contract_relief,measure,E2 debt contract relief
+e3_fiscal_measures,measure,E3 fiscal measures
+e4_international_support,measure,E4 international support
+h1_flag,measure,H1 flag
+h1_public_information_campaigns,measure,H1 public information campaigns
+h2_testing_policy,measure,H2 testing policy
+h3_contact_tracing,measure,H3 contact tracing
+h4_emergency_investment_in_healthcare,measure,H4 emergency investment in healthcare
+h5_investment_in_vaccines,measure,H5 investment in vaccines
+legacy_stringency_index,measure,Legacy stringency index
+legacy_stringency_index_for_display,measure,Legacy stringency index for display
+m1_wildcard,measure,M1 wildcard
+name,string,Name
+stringency_index,measure,Stringency index
+stringency_index_for_display,measure,Stringency index for display
