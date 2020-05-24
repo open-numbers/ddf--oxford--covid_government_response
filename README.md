@@ -7,4 +7,4 @@ OxCGRT collects publicly available information on 17 indicators of government re
 All data comes from the [OxCGRT github repository](https://github.com/OxCGRT/covid-policy-tracker). More information can be found on [OxCGRT website](https://www.bsg.ox.ac.uk/research/research-projects/coronavirus-government-response-tracker).
 
 ## Updates
-OxCGRT is updated daily, Gapminder also updates this dataset daily. This dataset may be behind one day to the OxCGRT repository.
+OxCGRT is updated hourly, Gapminder updates this dataset daily. This dataset may be behind one day to the OxCGRT repository.
