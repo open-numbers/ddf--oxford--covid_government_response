@@ -113,9 +113,7 @@ def get_concept_type(series):
 
 
 if __name__ == '__main__':
-    source = osp.join('..', 'source', source_path)
-
-    df = pd.read_csv(source)
+    df = pd.read_csv(source_path)
 
     # country entity
     country = df[['CountryCode', 'CountryName']]
