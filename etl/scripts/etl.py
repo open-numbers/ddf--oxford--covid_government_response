@@ -7,10 +7,10 @@ from ddf_utils.str import to_concept_id
 from ddf_utils.io import cleanup, dump_json
 from ddf_utils.package import get_datapackage
 
-renames = { 
-    'CountryCode': 'country', 
+renames = {
+    'CountryCode': 'country',
     'CountryName': 'name',
-    'Date': 'day'    
+    'Date': 'day'
 }
 entity_concepts = ['country']
 time_concepts = ['day']
@@ -26,10 +26,10 @@ def ddf_table(df, key, split_datapoints=True, renames={}, id_concepts=['concept'
     df = df.rename(columns=renames)
     df = df.rename(columns=concept_id)
     df = df.apply(lambda col: col.apply(concept_id) if col.name in id_concepts else col)
-    
+
     # dedepulicating
     df = remove_duplicates(df, key)
-    
+
     # sorting
     indicators = get_indicators(df, key)
     df = df.sort_values(key)
@@ -65,7 +65,7 @@ def collection_type(key):
         return 'datapoints'
     elif key[0] == 'concept':
         return 'concepts'
-    else: 
+    else:
         return 'entities'
 
 def get_indicators(df, key):
@@ -94,8 +94,8 @@ def get_concepts(dfs):
                 concept_types[col] = get_concept_type(df[col])
                 names[col] = humanize(col)
 
-    return pd.DataFrame({ 
-        'concept': list(concepts), 
+    return pd.DataFrame({
+        'concept': list(concepts),
         'concept_type': [concept_types[c] for c in concepts],
         'name': [names[c] for c in concepts]
     })
@@ -111,27 +111,29 @@ def get_concept_type(series):
         return 'boolean'
     return 'string'
 
-source = osp.join('..', 'source', source_path)
 
-df = pd.read_csv(source)
+if __name__ == '__main__':
+    source = osp.join('..', 'source', source_path)
 
-# country entity
-country = df[['CountryCode', 'CountryName']]
-country = ddf_table(country, key=['country'], renames=renames, id_concepts=id_concepts)
+    df = pd.read_csv(source)
 
-# datapoints
-indicator_cols = filter(lambda col: col not in ['CountryName'], df.columns)
-data = df[indicator_cols]
-data = ddf_table(data, key=['country','day'], renames=renames, id_concepts=id_concepts)
+    # country entity
+    country = df[['CountryCode', 'CountryName']]
+    country = ddf_table(country, key=['country'], renames=renames, id_concepts=id_concepts)
 
-# concepts
-concepts = get_concepts([country, data])
-ddf_table(concepts, key=['concept'])
+    # datapoints
+    indicator_cols = filter(lambda col: col not in ['CountryName'], df.columns)
+    data = df[indicator_cols]
+    data = ddf_table(data, key=['country','day'], renames=renames, id_concepts=id_concepts)
 
-# datapackage
-dp = get_datapackage(output_dir, update=True)
-dp['source'] = {}
-with open(sha_path, 'r') as f:
-    dp['source']['sha'] = f.readline()
-dp_path = osp.join(output_dir, 'datapackage.json')
-dump_json(dp_path, dp)
+    # concepts
+    concepts = get_concepts([country, data])
+    ddf_table(concepts, key=['concept'])
+
+    # datapackage
+    dp = get_datapackage(output_dir, update=True)
+    dp['source'] = {}
+    with open(sha_path, 'r') as f:
+        dp['source']['sha'] = f.readline()
+    dp_path = osp.join(output_dir, 'datapackage.json')
+    dump_json(dp_path, dp)
