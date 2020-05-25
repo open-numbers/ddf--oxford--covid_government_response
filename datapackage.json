@@ -8,9 +8,9 @@
     "description": "OxCGRT collects publicly available information on 17 indicators of government responses. Eight of the policy indicators (C1-C8) record information on containment and closure policies, such as school closures and restrictions in movement. Four of the indicators (E1-E4) record economic policies, such as income support to citizens or provision of foreign aid, and five indicators (H1-H5) record health system policies such as the COVID-19 testing regime or emergency investments into healthcare.",
     "author": "Oxford",
     "license": "CC-BY-4.0",
-    "created": "2020-05-25T03:37:28.222573+00:00",
+    "created": "2020-05-25T08:39:13.411953+00:00",
     "source": {
-        "sha": "2d2d316172998750cdc503d8e1bb827750f9cd6e"
+        "sha": "cb4fa97dcf86db1664a232bd38b247157c2ddcb6"
     },
     "translations": [],
     "version": "0.0.1",
@@ -391,6 +391,48 @@
             }
         },
         {
+            "name": "ddf--datapoints--containment_health_index--by--country--day",
+            "path": "ddf--datapoints--containment_health_index--by--country--day.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "country"
+                    },
+                    {
+                        "name": "day"
+                    },
+                    {
+                        "name": "containment_health_index"
+                    }
+                ],
+                "primaryKey": [
+                    "country",
+                    "day"
+                ]
+            }
+        },
+        {
+            "name": "ddf--datapoints--containment_health_index_for_display--by--country--day",
+            "path": "ddf--datapoints--containment_health_index_for_display--by--country--day.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "country"
+                    },
+                    {
+                        "name": "day"
+                    },
+                    {
+                        "name": "containment_health_index_for_display"
+                    }
+                ],
+                "primaryKey": [
+                    "country",
+                    "day"
+                ]
+            }
+        },
+        {
             "name": "ddf--datapoints--e1_flag--by--country--day",
             "path": "ddf--datapoints--e1_flag--by--country--day.csv",
             "schema": {
@@ -487,6 +529,90 @@
                     },
                     {
                         "name": "e4_international_support"
+                    }
+                ],
+                "primaryKey": [
+                    "country",
+                    "day"
+                ]
+            }
+        },
+        {
+            "name": "ddf--datapoints--economic_support_index--by--country--day",
+            "path": "ddf--datapoints--economic_support_index--by--country--day.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "country"
+                    },
+                    {
+                        "name": "day"
+                    },
+                    {
+                        "name": "economic_support_index"
+                    }
+                ],
+                "primaryKey": [
+                    "country",
+                    "day"
+                ]
+            }
+        },
+        {
+            "name": "ddf--datapoints--economic_support_index_for_display--by--country--day",
+            "path": "ddf--datapoints--economic_support_index_for_display--by--country--day.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "country"
+                    },
+                    {
+                        "name": "day"
+                    },
+                    {
+                        "name": "economic_support_index_for_display"
+                    }
+                ],
+                "primaryKey": [
+                    "country",
+                    "day"
+                ]
+            }
+        },
+        {
+            "name": "ddf--datapoints--government_response_index--by--country--day",
+            "path": "ddf--datapoints--government_response_index--by--country--day.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "country"
+                    },
+                    {
+                        "name": "day"
+                    },
+                    {
+                        "name": "government_response_index"
+                    }
+                ],
+                "primaryKey": [
+                    "country",
+                    "day"
+                ]
+            }
+        },
+        {
+            "name": "ddf--datapoints--government_response_index_for_display--by--country--day",
+            "path": "ddf--datapoints--government_response_index_for_display--by--country--day.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "country"
+                    },
+                    {
+                        "name": "day"
+                    },
+                    {
+                        "name": "government_response_index_for_display"
                     }
                 ],
                 "primaryKey": [
@@ -622,48 +748,6 @@
             }
         },
         {
-            "name": "ddf--datapoints--legacy_stringency_index--by--country--day",
-            "path": "ddf--datapoints--legacy_stringency_index--by--country--day.csv",
-            "schema": {
-                "fields": [
-                    {
-                        "name": "country"
-                    },
-                    {
-                        "name": "day"
-                    },
-                    {
-                        "name": "legacy_stringency_index"
-                    }
-                ],
-                "primaryKey": [
-                    "country",
-                    "day"
-                ]
-            }
-        },
-        {
-            "name": "ddf--datapoints--legacy_stringency_index_for_display--by--country--day",
-            "path": "ddf--datapoints--legacy_stringency_index_for_display--by--country--day.csv",
-            "schema": {
-                "fields": [
-                    {
-                        "name": "country"
-                    },
-                    {
-                        "name": "day"
-                    },
-                    {
-                        "name": "legacy_stringency_index_for_display"
-                    }
-                ],
-                "primaryKey": [
-                    "country",
-                    "day"
-                ]
-            }
-        },
-        {
             "name": "ddf--datapoints--m1_wildcard--by--country--day",
             "path": "ddf--datapoints--m1_wildcard--by--country--day.csv",
             "schema": {
@@ -718,6 +802,48 @@
                     },
                     {
                         "name": "stringency_index_for_display"
+                    }
+                ],
+                "primaryKey": [
+                    "country",
+                    "day"
+                ]
+            }
+        },
+        {
+            "name": "ddf--datapoints--stringency_legacy_index--by--country--day",
+            "path": "ddf--datapoints--stringency_legacy_index--by--country--day.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "country"
+                    },
+                    {
+                        "name": "day"
+                    },
+                    {
+                        "name": "stringency_legacy_index"
+                    }
+                ],
+                "primaryKey": [
+                    "country",
+                    "day"
+                ]
+            }
+        },
+        {
+            "name": "ddf--datapoints--stringency_legacy_index_for_display--by--country--day",
+            "path": "ddf--datapoints--stringency_legacy_index_for_display--by--country--day.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "country"
+                    },
+                    {
+                        "name": "day"
+                    },
+                    {
+                        "name": "stringency_legacy_index_for_display"
                     }
                 ],
                 "primaryKey": [
@@ -950,6 +1076,26 @@
                     "country",
                     "day"
                 ],
+                "value": "containment_health_index",
+                "resources": [
+                    "ddf--datapoints--containment_health_index--by--country--day"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "country",
+                    "day"
+                ],
+                "value": "containment_health_index_for_display",
+                "resources": [
+                    "ddf--datapoints--containment_health_index_for_display--by--country--day"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "country",
+                    "day"
+                ],
                 "value": "e1_flag",
                 "resources": [
                     "ddf--datapoints--e1_flag--by--country--day"
@@ -993,6 +1139,46 @@
                 "value": "e4_international_support",
                 "resources": [
                     "ddf--datapoints--e4_international_support--by--country--day"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "country",
+                    "day"
+                ],
+                "value": "economic_support_index",
+                "resources": [
+                    "ddf--datapoints--economic_support_index--by--country--day"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "country",
+                    "day"
+                ],
+                "value": "economic_support_index_for_display",
+                "resources": [
+                    "ddf--datapoints--economic_support_index_for_display--by--country--day"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "country",
+                    "day"
+                ],
+                "value": "government_response_index",
+                "resources": [
+                    "ddf--datapoints--government_response_index--by--country--day"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "country",
+                    "day"
+                ],
+                "value": "government_response_index_for_display",
+                "resources": [
+                    "ddf--datapoints--government_response_index_for_display--by--country--day"
                 ]
             },
             {
@@ -1060,26 +1246,6 @@
                     "country",
                     "day"
                 ],
-                "value": "legacy_stringency_index",
-                "resources": [
-                    "ddf--datapoints--legacy_stringency_index--by--country--day"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "country",
-                    "day"
-                ],
-                "value": "legacy_stringency_index_for_display",
-                "resources": [
-                    "ddf--datapoints--legacy_stringency_index_for_display--by--country--day"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "country",
-                    "day"
-                ],
                 "value": "m1_wildcard",
                 "resources": [
                     "ddf--datapoints--m1_wildcard--by--country--day"
@@ -1103,6 +1269,26 @@
                 "value": "stringency_index_for_display",
                 "resources": [
                     "ddf--datapoints--stringency_index_for_display--by--country--day"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "country",
+                    "day"
+                ],
+                "value": "stringency_legacy_index",
+                "resources": [
+                    "ddf--datapoints--stringency_legacy_index--by--country--day"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "country",
+                    "day"
+                ],
+                "value": "stringency_legacy_index_for_display",
+                "resources": [
+                    "ddf--datapoints--stringency_legacy_index_for_display--by--country--day"
                 ]
             }
         ],

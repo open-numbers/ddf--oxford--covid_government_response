@@ -16,6 +16,8 @@ c7_restrictions_on_internal_movement,measure,C7 restrictions on internal movemen
 c8_international_travel_controls,measure,C8 international travel controls
 confirmed_cases,measure,Confirmed cases
 confirmed_deaths,measure,Confirmed deaths
+containment_health_index,measure,Containment health index
+containment_health_index_for_display,measure,Containment health index for display
 country,entity_domain,Country
 day,time,Day
 e1_flag,measure,E1 flag
@@ -23,15 +25,19 @@ e1_income_support,measure,E1 income support
 e2_debt_contract_relief,measure,E2 debt contract relief
 e3_fiscal_measures,measure,E3 fiscal measures
 e4_international_support,measure,E4 international support
+economic_support_index,measure,Economic support index
+economic_support_index_for_display,measure,Economic support index for display
+government_response_index,measure,Government response index
+government_response_index_for_display,measure,Government response index for display
 h1_flag,measure,H1 flag
 h1_public_information_campaigns,measure,H1 public information campaigns
 h2_testing_policy,measure,H2 testing policy
 h3_contact_tracing,measure,H3 contact tracing
 h4_emergency_investment_in_healthcare,measure,H4 emergency investment in healthcare
 h5_investment_in_vaccines,measure,H5 investment in vaccines
-legacy_stringency_index,measure,Legacy stringency index
-legacy_stringency_index_for_display,measure,Legacy stringency index for display
 m1_wildcard,measure,M1 wildcard
 name,string,Name
 stringency_index,measure,Stringency index
 stringency_index_for_display,measure,Stringency index for display
+stringency_legacy_index,measure,Stringency legacy index
+stringency_legacy_index_for_display,measure,Stringency legacy index for display
