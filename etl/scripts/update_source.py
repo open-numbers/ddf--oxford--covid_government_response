@@ -17,9 +17,9 @@ def get_latest():
     local_sha = get_datapackage_sha()
     git_sha = get_github_head_sha(user, repo, branch)
 
-    if git_sha == local_sha:
-        print('Current dataset source is already latest. Not fetching new source.')
-        return
+    #if git_sha == local_sha:
+    #    print('Current dataset source is already latest. Not fetching new source.')
+    #    return
     
     print('Updating source...')
 
