@@ -8,9 +8,9 @@
     "description": "OxCGRT collects publicly available information on 17 indicators of government responses. Eight of the policy indicators (C1-C8) record information on containment and closure policies, such as school closures and restrictions in movement. Four of the indicators (E1-E4) record economic policies, such as income support to citizens or provision of foreign aid, and five indicators (H1-H5) record health system policies such as the COVID-19 testing regime or emergency investments into healthcare.",
     "author": "Oxford",
     "license": "CC-BY-4.0",
-    "created": "2020-07-30T21:21:43.791299+00:00",
+    "created": "2020-07-30T22:21:45.586107+00:00",
     "source": {
-        "sha": "8d13a9483bf20fda2216d77b5b20820a318341b4"
+        "sha": "17c3dc4bfc5c57348a161ad781b8c7030caae536"
     },
     "translations": [],
     "version": "0.0.1",
