@@ -8,9 +8,9 @@
     "description": "OxCGRT collects publicly available information on 17 indicators of government responses. Eight of the policy indicators (C1-C8) record information on containment and closure policies, such as school closures and restrictions in movement. Four of the indicators (E1-E4) record economic policies, such as income support to citizens or provision of foreign aid, and five indicators (H1-H5) record health system policies such as the COVID-19 testing regime or emergency investments into healthcare.",
     "author": "Oxford",
     "license": "CC-BY-4.0",
-    "created": "2020-08-27T18:22:04.746052+00:00",
+    "created": "2020-08-27T19:21:50.539940+00:00",
     "source": {
-        "sha": "b602884a1bbfbe920ab46b98b5d7d85a20883605"
+        "sha": "df6310b3b4bc6d83b573cfe8f156ac6f81e95e23"
     },
     "translations": [],
     "version": "0.0.1",
@@ -769,6 +769,48 @@
             }
         },
         {
+            "name": "ddf--datapoints--region_code--by--country--day",
+            "path": "ddf--datapoints--region_code--by--country--day.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "country"
+                    },
+                    {
+                        "name": "day"
+                    },
+                    {
+                        "name": "region_code"
+                    }
+                ],
+                "primaryKey": [
+                    "country",
+                    "day"
+                ]
+            }
+        },
+        {
+            "name": "ddf--datapoints--region_name--by--country--day",
+            "path": "ddf--datapoints--region_name--by--country--day.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "country"
+                    },
+                    {
+                        "name": "day"
+                    },
+                    {
+                        "name": "region_name"
+                    }
+                ],
+                "primaryKey": [
+                    "country",
+                    "day"
+                ]
+            }
+        },
+        {
             "name": "ddf--datapoints--stringency_index--by--country--day",
             "path": "ddf--datapoints--stringency_index--by--country--day.csv",
             "schema": {
@@ -1249,6 +1291,26 @@
                 "value": "m1_wildcard",
                 "resources": [
                     "ddf--datapoints--m1_wildcard--by--country--day"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "country",
+                    "day"
+                ],
+                "value": "region_code",
+                "resources": [
+                    "ddf--datapoints--region_code--by--country--day"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "country",
+                    "day"
+                ],
+                "value": "region_name",
+                "resources": [
+                    "ddf--datapoints--region_name--by--country--day"
                 ]
             },
             {
