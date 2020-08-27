@@ -37,6 +37,8 @@ h4_emergency_investment_in_healthcare,measure,H4 emergency investment in healthc
 h5_investment_in_vaccines,measure,H5 investment in vaccines
 m1_wildcard,measure,M1 wildcard
 name,string,Name
+region_code,string,Region code
+region_name,string,Region name
 stringency_index,measure,Stringency index
 stringency_index_for_display,measure,Stringency index for display
 stringency_legacy_index,measure,Stringency legacy index
