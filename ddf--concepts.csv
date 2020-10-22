@@ -35,6 +35,8 @@ h2_testing_policy,measure,H2 testing policy
 h3_contact_tracing,measure,H3 contact tracing
 h4_emergency_investment_in_healthcare,measure,H4 emergency investment in healthcare
 h5_investment_in_vaccines,measure,H5 investment in vaccines
+h6_facial_coverings,measure,H6 facial coverings
+h6_flag,measure,H6 flag
 m1_wildcard,measure,M1 wildcard
 name,string,Name
 region_code,string,Region code
