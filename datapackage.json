@@ -8,9 +8,9 @@
     "description": "OxCGRT collects publicly available information on 17 indicators of government responses. Eight of the policy indicators (C1-C8) record information on containment and closure policies, such as school closures and restrictions in movement. Four of the indicators (E1-E4) record economic policies, such as income support to citizens or provision of foreign aid, and five indicators (H1-H5) record health system policies such as the COVID-19 testing regime or emergency investments into healthcare.",
     "author": "Oxford",
     "license": "CC-BY-4.0",
-    "created": "2020-10-22T15:41:49.678304+00:00",
+    "created": "2020-10-22T18:42:10.523201+00:00",
     "source": {
-        "sha": "6d1cc0b1d6e02fb96d81165a3c9614edf17c2b50"
+        "sha": "72c400c938e1971fa8c267808049d9e108d8932b"
     },
     "translations": [],
     "version": "0.0.1",
@@ -748,6 +748,48 @@
             }
         },
         {
+            "name": "ddf--datapoints--h6_facial_coverings--by--country--day",
+            "path": "ddf--datapoints--h6_facial_coverings--by--country--day.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "country"
+                    },
+                    {
+                        "name": "day"
+                    },
+                    {
+                        "name": "h6_facial_coverings"
+                    }
+                ],
+                "primaryKey": [
+                    "country",
+                    "day"
+                ]
+            }
+        },
+        {
+            "name": "ddf--datapoints--h6_flag--by--country--day",
+            "path": "ddf--datapoints--h6_flag--by--country--day.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "country"
+                    },
+                    {
+                        "name": "day"
+                    },
+                    {
+                        "name": "h6_flag"
+                    }
+                ],
+                "primaryKey": [
+                    "country",
+                    "day"
+                ]
+            }
+        },
+        {
             "name": "ddf--datapoints--m1_wildcard--by--country--day",
             "path": "ddf--datapoints--m1_wildcard--by--country--day.csv",
             "schema": {
@@ -1281,6 +1323,26 @@
                 "value": "h5_investment_in_vaccines",
                 "resources": [
                     "ddf--datapoints--h5_investment_in_vaccines--by--country--day"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "country",
+                    "day"
+                ],
+                "value": "h6_facial_coverings",
+                "resources": [
+                    "ddf--datapoints--h6_facial_coverings--by--country--day"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "country",
+                    "day"
+                ],
+                "value": "h6_flag",
+                "resources": [
+                    "ddf--datapoints--h6_flag--by--country--day"
                 ]
             },
             {
