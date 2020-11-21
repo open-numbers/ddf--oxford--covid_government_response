@@ -2,7 +2,6 @@ country,name
 abw,Aruba
 afg,Afghanistan
 ago,Angola
-aia,Anguilla
 alb,Albania
 and,Andorra
 are,United Arab Emirates
@@ -42,7 +41,6 @@ com,Comoros
 cpv,Cape Verde
 cri,Costa Rica
 cub,Cuba
-cym,Cayman Islands
 cyp,Cyprus
 cze,Czech Republic
 deu,Germany
@@ -59,13 +57,11 @@ est,Estonia
 eth,Ethiopia
 fin,Finland
 fji,Fiji
-flk,Falkland Islands
 fra,France
 gab,Gabon
 gbr,United Kingdom
 geo,Georgia
 gha,Ghana
-gib,Gibraltar
 gin,Guinea
 gmb,Gambia
 grc,Greece
@@ -115,7 +111,6 @@ mmr,Myanmar
 mng,Mongolia
 moz,Mozambique
 mrt,Mauritania
-msr,Montserrat
 mus,Mauritius
 mwi,Malawi
 mys,Malaysia
@@ -130,7 +125,6 @@ nzl,New Zealand
 omn,Oman
 pak,Pakistan
 pan,Panama
-pcn,Pitcairn Islands
 per,Peru
 phl,Philippines
 png,Papua New Guinea
@@ -162,7 +156,6 @@ swe,Sweden
 swz,Eswatini
 syc,Seychelles
 syr,Syria
-tca,Turks and Caicos Islands
 tcd,Chad
 tgo,Togo
 tha,Thailand
@@ -180,7 +173,6 @@ ury,Uruguay
 usa,United States
 uzb,Uzbekistan
 ven,Venezuela
-vgb,British Virgin Islands
 vir,United States Virgin Islands
 vnm,Vietnam
 vut,Vanuatu
