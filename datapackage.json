@@ -8,9 +8,9 @@
     "description": "OxCGRT collects publicly available information on 17 indicators of government responses. Eight of the policy indicators (C1-C8) record information on containment and closure policies, such as school closures and restrictions in movement. Four of the indicators (E1-E4) record economic policies, such as income support to citizens or provision of foreign aid, and five indicators (H1-H5) record health system policies such as the COVID-19 testing regime or emergency investments into healthcare.",
     "author": "Oxford",
     "license": "CC-BY-4.0",
-    "created": "2020-11-23T18:41:50.142970+00:00",
+    "created": "2020-11-23T21:42:11.130423+00:00",
     "source": {
-        "sha": "0d1186531686d3a5695686243998492b2d287fbe"
+        "sha": "bb1ac8d60f3f9fadf5e1d6f34368978c4565cfbd"
     },
     "translations": [],
     "version": "0.0.1",
@@ -790,6 +790,27 @@
             }
         },
         {
+            "name": "ddf--datapoints--jurisdiction--by--country--day",
+            "path": "ddf--datapoints--jurisdiction--by--country--day.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "country"
+                    },
+                    {
+                        "name": "day"
+                    },
+                    {
+                        "name": "jurisdiction"
+                    }
+                ],
+                "primaryKey": [
+                    "country",
+                    "day"
+                ]
+            }
+        },
+        {
             "name": "ddf--datapoints--m1_wildcard--by--country--day",
             "path": "ddf--datapoints--m1_wildcard--by--country--day.csv",
             "schema": {
@@ -1343,6 +1364,16 @@
                 "value": "h6_flag",
                 "resources": [
                     "ddf--datapoints--h6_flag--by--country--day"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "country",
+                    "day"
+                ],
+                "value": "jurisdiction",
+                "resources": [
+                    "ddf--datapoints--jurisdiction--by--country--day"
                 ]
             },
             {
