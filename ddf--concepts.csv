@@ -37,6 +37,8 @@ h4_emergency_investment_in_healthcare,measure,H4 emergency investment in healthc
 h5_investment_in_vaccines,measure,H5 investment in vaccines
 h6_facial_coverings,measure,H6 facial coverings
 h6_flag,measure,H6 flag
+h7_flag,measure,H7 flag
+h7_vaccination_policy,measure,H7 vaccination policy
 jurisdiction,string,Jurisdiction
 m1_wildcard,measure,M1 wildcard
 name,string,Name

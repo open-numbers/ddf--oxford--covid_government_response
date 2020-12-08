@@ -8,9 +8,9 @@
     "description": "OxCGRT collects publicly available information on 17 indicators of government responses. Eight of the policy indicators (C1-C8) record information on containment and closure policies, such as school closures and restrictions in movement. Four of the indicators (E1-E4) record economic policies, such as income support to citizens or provision of foreign aid, and five indicators (H1-H5) record health system policies such as the COVID-19 testing regime or emergency investments into healthcare.",
     "author": "Oxford",
     "license": "CC-BY-4.0",
-    "created": "2020-12-08T12:41:50.786196+00:00",
+    "created": "2020-12-08T15:42:09.808413+00:00",
     "source": {
-        "sha": "cfa024eeba64f295c706d734a1b460149d6d7952"
+        "sha": "623f67192027fb1bda8dd6b26262bc0af4f7d581"
     },
     "translations": [],
     "version": "0.0.1",
@@ -790,6 +790,48 @@
             }
         },
         {
+            "name": "ddf--datapoints--h7_flag--by--country--day",
+            "path": "ddf--datapoints--h7_flag--by--country--day.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "country"
+                    },
+                    {
+                        "name": "day"
+                    },
+                    {
+                        "name": "h7_flag"
+                    }
+                ],
+                "primaryKey": [
+                    "country",
+                    "day"
+                ]
+            }
+        },
+        {
+            "name": "ddf--datapoints--h7_vaccination_policy--by--country--day",
+            "path": "ddf--datapoints--h7_vaccination_policy--by--country--day.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "country"
+                    },
+                    {
+                        "name": "day"
+                    },
+                    {
+                        "name": "h7_vaccination_policy"
+                    }
+                ],
+                "primaryKey": [
+                    "country",
+                    "day"
+                ]
+            }
+        },
+        {
             "name": "ddf--datapoints--jurisdiction--by--country--day",
             "path": "ddf--datapoints--jurisdiction--by--country--day.csv",
             "schema": {
@@ -1364,6 +1406,26 @@
                 "value": "h6_flag",
                 "resources": [
                     "ddf--datapoints--h6_flag--by--country--day"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "country",
+                    "day"
+                ],
+                "value": "h7_flag",
+                "resources": [
+                    "ddf--datapoints--h7_flag--by--country--day"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "country",
+                    "day"
+                ],
+                "value": "h7_vaccination_policy",
+                "resources": [
+                    "ddf--datapoints--h7_vaccination_policy--by--country--day"
                 ]
             },
             {
