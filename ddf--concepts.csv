@@ -39,6 +39,8 @@ h6_facial_coverings,measure,H6 facial coverings
 h6_flag,measure,H6 flag
 h7_flag,measure,H7 flag
 h7_vaccination_policy,measure,H7 vaccination policy
+h8_flag,measure,H8 flag
+h8_protection_of_elderly_people,measure,H8 protection of elderly people
 jurisdiction,string,Jurisdiction
 m1_wildcard,measure,M1 wildcard
 name,string,Name
